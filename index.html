@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>生日贺卡</title>
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      color: #ff0000;
+      font-size: 30px;
+      animation: pulse 1s infinite;
+    }
+
+    .card {
+      background-color: #fff;
+      width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      animation: slideIn 1s;
+    }
+
+    p {
+      color: #333;
+      font-size: 18px;
+    }
+
+    .signature {
+      font-style: italic;
+      color: #777;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateX(-100px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>生日快乐，吴老师！</h1>
+    <p>亲爱的吴老师，祝您在这特殊的日子里，生日快乐！感谢您长时间以来给我的指导和支持，在您的生日这一天，我衷心祝愿您健康、幸福、快乐，事业蒸蒸日上！</p>
+    <p class="signature">诚挚地，您的学生李润波</p>
+    <img src="http://thumb.1010pic.com/pic10/allimg/201603/3954-16031GF9535c.jpg" alt="生日蛋糕" width="400px">
+  </div>
+</body>
+</html>
